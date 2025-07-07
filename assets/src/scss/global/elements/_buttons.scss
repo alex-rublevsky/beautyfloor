@@ -1,0 +1,143 @@
+.btn {
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all $animation-time ease-out;
+    &.disabled {
+      color: $color-mono-6;
+      background: $color-mono-7;
+    }
+    &--add,
+    &--order {
+      background: $color-brown-1;
+      font-weight: 600;
+      &:hover {
+        background: $color-brown-2;
+      }
+      &:active {
+        background: $color-brown-3;
+      }
+    }
+    &--add {
+      border-radius: 0.555rem;
+      min-width: 12.722rem;
+      height: 4.722rem;
+      font-size: 1.66rem;
+      line-height: 4.722rem;
+      padding: 0 1.111rem 1.111rem;
+    }
+    &--catalog {
+      width: 7.055rem;
+      height: 3.944rem;
+      background: $color-brown-3;
+      font-weight: 500;
+      line-height: 3.944rem;
+      border-radius: 0.888rem;
+      &:hover {
+        background: $color-brown-5;
+      }
+    }
+    &--order {
+      width: 21.888rem;
+      height: 3.888rem;
+      border-radius: 0.555rem;
+      line-height: 3.888rem;
+      &.disabled {
+        border: solid 2px $color-mono-6;
+      }
+    }
+    &--slider,
+    &--banner {
+      border: 2px solid #FFF;
+      font-weight: 500;
+      background: transparent;
+      line-height: 3.055rem;
+    }
+    &--slider {
+      width: 8.388rem;
+      height: 3.333rem;
+      font-size: 1rem;
+      border-radius: 0.555rem;
+    }
+    &--banner {
+      width: 9rem;
+      height: 3.5rem;
+      border-radius: 0.888rem;
+      font-size: 1.111rem;
+    }
+    &--more {
+      width: auto;
+      padding: 0 1.388rem 0 1.388rem;
+      height: 3.333rem;
+      border: solid 2px $color-brown-5;
+      border-radius: 0.555rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 3.1rem;
+      color: $color-mono-1;
+      &:hover {
+        border-color: $color-brown-5;
+        background: $color-brown-6;
+      }
+    }
+    &--back {
+      width: 2.777rem;
+      height: 2.777rem;
+      border-radius: 0.555rem;
+      border: 2px solid $color-mono-7;
+      text-align: center;
+      line-height: 2.777rem;
+    }
+    &.disable {
+      opacity: 0.5;
+      cursor: default;
+    }
+    &--tohome,
+    &--comeback {
+      width: 17.777rem;
+      height: 3.333rem;
+      padding: 0 20px 0 20px;
+      font-size: 1rem;
+      line-height: 3.333rem;
+      border-radius: 0.888rem;
+    }
+    &--comeback {
+      border: 2px solid $color-brown-5;
+      color: $color-black;
+    }
+    &--tohome {
+      background: $color-brown-1;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .btn {
+      &--slider,
+      &--banner {
+        border: 1px solid $color-brown-5;
+        font-weight: 400;
+        line-height: 2.777rem;
+        color: $color-black;
+      }
+      &--slider,
+      &--banner {
+        width: 7.055rem;
+        height: 3rem;
+        font-size: 0.777rem;
+      }
+      &--order {
+        width: 100%;
+        max-width: 16.66rem;
+      }
+      &--tohome,
+      &--comeback {
+        display: block;
+        width: 100%;
+        max-width: 16.66rem;
+        height: 3rem;
+        font-size: 0.777rem;
+        line-height: 3rem;
+      }
+    }
+  }
+  
